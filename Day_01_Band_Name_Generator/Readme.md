@@ -2,3 +2,5 @@
 ## Project 1: Random Band Generator
 
 This small project demostrates how to get User-input varialbes, how to concatenate string's variables
+
+Using the input() method to get two different strings from the user. Then, we concatenate both variables and print the result.
