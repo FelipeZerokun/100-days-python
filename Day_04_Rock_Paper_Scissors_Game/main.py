@@ -31,7 +31,7 @@ scissors = '''
 '''
 
 print("Welcome to the Rock Paper Scissors game, by Felipe Rojas")
-player_selection = input("make your choice (rock, paper or scissors: ").lower()
+player_selection = input("make your choice (rock, paper or scissors): ").lower()
 
 computer_selection = random.randint(1, 3)
 #print(player_selection)
