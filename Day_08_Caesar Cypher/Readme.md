@@ -5,3 +5,4 @@ A Ceaser Cypher is a cypher method that takes each word from a phrase and shifts
 This project lets the user encypth or decrypt a phrase given by the same user. 
 
 This project uses string manipulation to shift letter by letter each word. 
+Also, here I begin to define functions to make the code more practical and easy to understand.
