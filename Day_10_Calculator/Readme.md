@@ -1,5 +1,5 @@
 # 100 Days of Python
-## Project 10: Random Band Generator
+## Project 10: Calculator
 
 This is a small calculator project.
 
