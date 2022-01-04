@@ -1,6 +1,8 @@
 # 100 Days of Python
 ## Project 1: Random Band Generator
 
-This small project demostrates how to get User-input varialbes, how to concatenate string's variables
+This small project is an introduction on how to get variables from the user, and a bit of how to manipulate strings.
 
-Using the input() method to get two different strings from the user. Then, we concatenate both variables and print the result.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
