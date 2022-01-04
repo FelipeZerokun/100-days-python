@@ -1,4 +1,5 @@
 # 100 Days of Python
 ## Project 5: Random Password Generator.
 
-This project uses the Random module to pick from letters, numbers and symbols and create a random password for the user.
+This is a really useful project where the users can generate random passwords with the number of letters, numbers and symbols of their choice.
+
