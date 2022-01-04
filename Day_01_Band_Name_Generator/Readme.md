@@ -5,7 +5,7 @@ This small project is an introduction on how to show something and get variables
 * Using print function to show a message to the user.
 * Using input function to get a string variable from the user.
 
-Also, we use a bit of string manipulation.
+Also, I used a bit of string manipulation.
 * Concatenate two strings into one.
 
 ------------------------------------------------------------------------------------------------------------------------------------
