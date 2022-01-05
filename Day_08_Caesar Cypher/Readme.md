@@ -1,10 +1,10 @@
 # 100 Days of Python
-## Project 8: Ceaser cypher
+## Project 8: Ceaser cipher
 
-A Ceaser Cypher is a cypher method that takes each word from a phrase and shifts them with another letter placed a number of spaces down the alphabet.
-This project lets the user encypth or decrypt a phrase given by the same user. 
+A Ceaser Cipher is a cipher method that takes each word from a phrase and shifts them with another letter placed a number of spaces down the alphabet.
+This project lets the user encrypth or decrypt a phrase given by the same user. 
 
-There should be two modes for the cypther. Encode and Decode modes. The encode mode will be used to cypher a clear message by shifting the letters to the right position in the alphabet. The Decode mode should take a encrypted message and turn it normal by shifting the letters to the left position in the alphabet.
+There should be two modes for the cipher. Encode and Decode modes. The encode mode will be used to cipher a clear message by shifting the letters to the right position in the alphabet. The Decode mode should take a encrypted message and turn it normal by shifting the letters to the left position in the alphabet.
 
 For this, the first thing the code must have is a list with all the letters of the alphabet in perfect order. English alphabet has 26 letters.
 
