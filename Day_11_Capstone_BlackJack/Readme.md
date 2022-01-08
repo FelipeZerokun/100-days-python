@@ -11,3 +11,5 @@ This project uses all the knowledge from the projects before.
 * Function creation and calling
 * Data Structure -Lists
 * Loops - While If
+
+Firstly, I created a file called card_selection.py where I made a function that will randomly pick a card from A to K, like a deck of cards.
