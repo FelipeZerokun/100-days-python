@@ -5,6 +5,7 @@ The first Capstone project in the course.
 Another really popular game, the Blackjack Game!
 
 This project uses all the knowledge from the projects before.
+* import data from other files
 * User inputs
 * Type conversion
 * Function creation and calling
