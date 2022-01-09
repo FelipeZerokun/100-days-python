@@ -6,7 +6,7 @@ This project lets the user encrypth or decrypt a phrase given by the same user.
 
 There should be two modes for the cipher. Encode and Decode modes. The encode mode will be used to cipher a clear message by shifting the letters to the right position in the alphabet. The Decode mode should take a encrypted message and turn it normal by shifting the letters to the left position in the alphabet.
 
-Here I define a function that will take some arguments. Arguments are data the function needs to work properly. In this case the function "Caeser cypher" needs the direction, the message and the shift
+Here I define a function that will take some arguments. Arguments are data the function needs to work properly. In this case the function "caesar(start_text, shift_amount, cipher_direction)" needs the message to decode, the amount of spaces to shift and the direction of the shift.
 
 For this, the first thing the code must have is a list with all the letters of the alphabet in perfect order. English alphabet has 26 letters.
 
@@ -24,6 +24,8 @@ El cifrado César es un método de cifrado que toma cada letra de una frase y la
 Este proyecto le permite al usuario codificar o decodificar una frase dada por el mismo usuario.
 
 Debe haber dos modos para el cifrado. Codificar o decodificar. El modo de codificación será usado para codificar un mensaje claro al desplazar las letras hacia la derecha en el alfabeto. El modo de decodificar deberá tomar un mensaje encriptado y regresarlo a la normalidad desplazando las letras hacia la izquierda en el alfabeto.
+
+Aquí definí una función que tomará algunos argumentos. Argumentos son datos que la función necesita para funcionar correctamente. En este caso la función "caesar(start_text, shift_amount, cipher_direction)" necesita el mensaje a codificar, la cantidad de espacios a desplazar y la dirección del desplazamiento.
 
 Para esto, lo primero que el código debe tener es una lista con todas als letras del alfabeto en perfecto orden. El programa está hecho para traducir mensajes en inglés, así que uso el alfabeto inglés con 26 letras.
 
