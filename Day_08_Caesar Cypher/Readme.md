@@ -6,6 +6,8 @@ This project lets the user encrypth or decrypt a phrase given by the same user.
 
 There should be two modes for the cipher. Encode and Decode modes. The encode mode will be used to cipher a clear message by shifting the letters to the right position in the alphabet. The Decode mode should take a encrypted message and turn it normal by shifting the letters to the left position in the alphabet.
 
+Here I define a function that will take some arguments. Arguments are data the function needs to work properly. In this case the function "Caeser cypher" needs the direction, the message and the shift
+
 For this, the first thing the code must have is a list with all the letters of the alphabet in perfect order. English alphabet has 26 letters.
 
 The first thing the program will do is ask the user if he wants to enconde or decode a message. Then it will prompt the user to enter the message. Finally, it will ask the user how many spaces to shift the message. One of the problems here is if the user enters a number bigger than 26, because it will exceed the size of the alphabet list and will end up in an error. Using the modulo operator (%) I can get the remainder of a division. In this case, if I get the remainder of the number of shifts divided by 26, I will always get a number between 0 and 25.
