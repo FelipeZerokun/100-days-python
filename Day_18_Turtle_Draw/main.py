@@ -11,6 +11,13 @@ my_screen = Screen()
 turtle.colormode(255)
 
 
+def random_color():
+    red_color = random.randint(1, 255)
+    green_color = random.randint(1, 255)
+    blue_color = random.randint(1, 255)
+    return red_color, green_color, blue_color
+
+
 # Draw a straight line/dashed line
 '''
 for side in range(10):
@@ -19,14 +26,6 @@ for side in range(10):
     tim.forward(10)
     tim.pendown()
 '''
-
-
-def random_color():
-    red_color = random.randint(1, 255)
-    green_color = random.randint(1, 255)
-    blue_color = random.randint(1, 255)
-    return red_color, green_color, blue_color
-
 
 # Draw other figures
 '''
@@ -89,7 +88,6 @@ tim.penup()
 tim.goto(0, 20)
 
 # Now, the loop for drawing
-
 
 def hor_drawing(n_steps):
     distance = int(my_screen.canvwidth / n_steps)
