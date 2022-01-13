@@ -19,3 +19,28 @@ Since there are two players for this game, I have to create two Paddle objects. 
 Then with IFs conditionals the code will check if the ball goes beyond the left and right sides of the screen, or if it bounces on the roof, floor or the paddles.
 
 Another good example of how to use inherited classes, and how to practice objects creation to make easy a project that would be kind of difficult.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 100 Días de Python
+## Proyecto 22: Juego Pong
+
+¡Otro juego clásico para los amantes de juegos como yo!
+Siguiendo los mismos pasos del proyecto del juego Snake, este proyecto puede ser realizado con facilidad.
+Los elementos necesarios para este proyecto son una pelota, dos paletas y un tablero de puntos.
+
+Así que, siguiendo los pasos del juego Snake, hice que la clase Ball herede los métodos de la clase Turtle. Cambié su forma a un círculo, color blanco y velocidad rápida.
+Para el movimiento, la bola siempre avanzará 10 pixeles en X y 10 pixeles en Y. Esto hará que la bola siempre se mueva diagonalmente a 45 grados. El código para esto está en el método ball_movement.
+
+Si la variable x_move es positiva, la bola se moverá hacia la derecha, de otra forma, se moverá a la izquierda. Si la variable y_move es positiva, la bola se moverá hacia arriba, de otra forma, se moverá hacia abajo. Los métodos wall_bounce y paddle_bounce cambiarán los signos de las variables x_move y y_move. También, cada vez que la bola rebote en una paleta, la velocidad será incrementada un poco.
+Cuando la bola se va más allá del límite derecho e izquierdo de la pantalla, cuenta como un punto para un jugador, y la bola resetea su posición con el método reset_position.
+
+Ahora para las paletas, también serán creadas de una clase que hereda del módule Turtle. En este caso, la forma será rectangular. Los métodos move_up y move_down harán que las paletas se muevan hacia arriba y hacia abajo. El reinicio de posición hará que las paletas regresen al centro después de un "gol".
+
+La clase para el puntaje también heredará de la clase Turtle. Como en el juego Snake, el puntaje estará en la parte superior izquierda de la ventaja. Cada jugador tendrá su propio puntaje, y el método update_score actualizará cualquier puntaje.
+
+Así que, en el archivo main.py, crearé la ventaja que será usada para el juego. Nuevamente la crearé de color negro para que se asemeje al juego original. Importé todas las clases creadas, y también el módulo Time. En el bucle While, usé el método Sleep con una variable de la clase Ball. Cómo expliqué en la parte de la clase Ball, cada vez que la bola rebote en una paleta, la velociudad será incrementada. Para lograr esto, usé una variable que haga el tiempo de Sleep cada vez menor, haciendo que parezca que el juego se vuelve más rápido.
+Ya que hay dos jugadores para este juego, debo crear dos objetos Paddle. One posicionado a la izquierda y uno a la derecha.
+Luego con condicionales IF el código revisará cuando la bola se vaya por fuera de la pantalla a la izquierda o derecha, si rebota en el techo o en el piso, o si rebota en una paleta.
+
+Éste es otro buen ejemplo en cómo usar la herencia de clases, y para practicar la creación de objetos para hacer un proyecto, 
