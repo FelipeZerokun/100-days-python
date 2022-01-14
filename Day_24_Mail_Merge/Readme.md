@@ -8,7 +8,7 @@ I uploaded two folders again, one with some practice with the methods, and the s
 
 In the text_practice folder in only one main.py file. Here you can see how I practice a bit with the "with" and "as" keywords for writing and editing some txt files.
 
-Now for the project, the main objective is to created files like mails, where we take a list of names and replace the word placeholder "[name]" with each name. This is helpful when you need to send the same letter to different persons. There are several folders in the project so we could practice folder pathings as well.
+Now for the project, the main objective is to created files like mails, where we take a list of names and replace the word placeholder "[name]" with each name. This is helpful when you need to send the same letter to different persons. There are several folders in the project so we could practice with folder paths as well.
 
 To begin, we just need a txt file with the names of all the people we want to send the letters. In the project, this list is inside the folder Names, inside of the folder Input. In this folder is also the folder Letters, which cointain the base letter file. Notice that in the base letter text is the placerholder "[name]".
 
@@ -25,6 +25,31 @@ Now all the new letters will be in the destination folder, each one with a name 
 This was a pretty interesting project that shows how Python can be used to do repetitive tasks. We learnt how to open files, how to read what's inside of those files, and how we can edit or replace data from the files. So far, we have only used txt files, but in the next project we will try with other files as well.
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# 100 Días de Python
+## Proyecto 24: Fusión para correos.
+
+En el proyecto del juego de Snake realizamos un poco de edición de un archivo, dónde escribíamos en un archivo txt cada vez que el usuario obtenía un nuevo puntaje máximo.
+Ahora, en este proyecto vamos a ver más de cerca cómo abrir, modificar, reemplazar y más en archivos externos.
+
+Subí dos carpetas nuevamente, una con un archivo de práctica, y la otra con el proyecto de fusión para correos.
+
+En la carpeta de text_practice hay sólo un archivo main.py. Aquí se puede observar cómo practiqué un poquito con las palabras clave "with" y "as" para escritura y edición de archivos txt.
+
+Ahora para el proyecto, el objetivo principal es crear archivos como correos, dónde se tomará una lista de nombres que reemplazarán la palabra marcador "[name]" con cada uno de los nombres. Esto es muy útil cuando se necesita envíar la misma carta a diferentes personas. Hay múltiples carpetas en este proyecto para así practicar con rutas de carpetas.
+
+Para comenzar, sólo necesitamos un archivo txt con los nombres de todas las personas a la que queremos envíar las cartas. En este proyecto, la lista está dentro de una carpeta llamada Names, dentro de la carpeta llamada Input. En esta carpeta también estará el archivo de la carta base en la carpeta llamada Letters. Dentro del texto de esta carta base estará la palabra marcador "[name]".
+
+Guardaré todas las cartas en una carpeta llamada ReadyToSend, dentro de la carpeta Output.
+
+Este proyecto es bastante sencillo. Dentro del archivo main.py abriré la lista con los nombres usando "with" y "as". Lo hago de esta forma para ahorrar unas líneas de código, ya que si utilizo el método open, debería cerrar el archivo cuando termine de usarlo. Con las palabras clave "with" y "as" una vez que se termine el código en las líneas indentadas, el archivo se cerrará automáticamente.
+Después de abrir el archivo, guardé los nombres como lista en una variable usando el método readlines.
+
+Ahora utilizando otro "with" y "as" abrí la carta base. Guardé el texto en una variable llamada starting_letter. Ahora, con un bucle FOR voy a reemplazar la palabra marcador en la carta base con los nombres en la lista, y guardaré ese texto en una nueva variable. Ahora usaré el método open para abrir el archivo dónde que utilizaré para la carta. Si el archivo con el nombre especificado no existe, este método creará un archivo con ese nombre. Utilizé el método write para insertar el text dentro del archivo recién creado.
+Ya que estoy en un bucle FOR, este proceso se repitirá con todos los nombres en la lista.
+
+Ahora todas las nuevas cartas estarán en la carpeta de destino, cada una con un nombre de la lista.
+
+Este fue un proyecto muy interesante que nos muestra cómo puede ser utilizado Python para realizar tareas repetitivas. Aprendimos cómo abrir archivos, cómo leer lo que está dentro de estos archivos y cómo editar o reemplazar información en esos archivos. Hasta ahora, sólo hemos utilizado archivos txt, pero en el siguiente proyecto probaremos con otros archivos también.
