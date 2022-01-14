@@ -1,0 +1,1 @@
+Open with mode 'w' creates a file in case there is no file in the directory
