@@ -21,5 +21,6 @@ class GameTurtle(Turtle):
     def move_up(self):
         self.forward(MOVE_DISTANCE)
 
-    def move_down(self):
-        self.back(MOVE_DISTANCE)
+        def move_down(self):
+        if self.ycor() > -270:
+            self.back(MOVE_DISTANCE)
