@@ -17,7 +17,7 @@ I will save all the letters in a folder called ReadyToSend, inside of the Output
 The project is quite simple. In the main.py file I firstly open the name list with the "with" and "as" keywords. I do it this way to save some code lines, because only using the "open" method, I should close the file later. The with and as keywords close the file as soon as the code in the indented lines is over.
 After is open the file, I use the method readlines to get all the names inside the txt file in a list.
 
-Now I used another "with" and "as" to open the base letter. I save the text in the file in a variable called starting_letter. Now, with a FOR loop I will replace the PLACEHOLDER in the starting letter with the actual name in the name list, and save that text as a new variable. Now I will use the open method to open the text where the letter will be stored. If the file with that name does not exist, the method will create a new file with that name. I use the method write to insert the text into the file I just created.
+Now I used another "with" and "as" to open the base letter. I save the text in the file in a variable called starting_letter. Now, with a FOR loop I will replace the PLACEHOLDER in the starting letter with the actual name in the name list, and save that text as a new variable. Now I will use the open method to open the file where the letter will be stored. If the file with that name does not exist, the method will create a new file with that name. I use the method write to insert the text into the file I just created.
 Since I am in a FOR loop, this will be done for all the names in the list.
 
 Now all the new letters will be in the destination folder, each one with a name in the list.
