@@ -12,7 +12,7 @@ In this database, you can see many characteristics like, age, fur color, locatio
 
 Before anything, you must install the pandas library in your IDE, and then import it to the project.
 using the read_csv method from Pandas I imported the Squirrel CSV file into a variable. This variable will be a Pandas object known as a dataframe. It is similar to a list. With the conditional ["Primary Fur Color"] == "Color" I can get all the column that match the "color". So, I just did the comparisson with the three colors, and used the len method to count how many were on each one. 
-Finally, to learn how to transform this data into a CSV file, DataFrame and the to_csv methods with the data I got.
+Finally, to learn how to transform this data into a CSV file, I used the DataFrame and the to_csv methods with the data I got.
 
 Now, the States Game project
 Basically, it is a game where you have to point out all the states in a map of the United States of America.
@@ -39,9 +39,10 @@ Realicé un pequeño proyecto antes del principal, y lo subí porque me parece b
 El proyecto de Gran Censo de Ardillas (Great Squirrel Census) es un proyecto interesante de [The squirrel Census](https://www.thesquirrelcensus.com/), dónde numerosos voluntarias fueron al parque Central Park y contaron todas las ardillas en el parque. De esto salió una sorprendente base de datos aquí: [NYC Open data](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).
 En esta base de datos, se pueden ver características cómo edad, color del pelaje, ubicación, comportamiento, entre otras. Así que, utilizando esta base de datos practiqué cómo manipular un archivo CSV utilizando Python. El objetivo de este proyecto es contar cuántas ardillas de cada color de pelaje hay en la base de datos. Los colores de pelaje son Gris, Canela y negro.
 
-Before anything, you must install the pandas library in your IDE, and then import it to the project.
-using the read_csv method from Pandas I imported the Squirrel CSV file into a variable. This variable will be a Pandas object known as a dataframe. It is similar to a list. With the conditional ["Primary Fur Color"] == "Color" I can get all the column that match the "color". So, I just did the comparisson with the three colors, and used the len method to count how many were on each one. 
-Finally, to learn how to transform this data into a CSV file, DataFrame and the to_csv methods with the data I got.
+Antes de nada, se debe instalar la librería Pandas en tu IDE, y luego importarla al proyecto.
+Usando el método read_csv de Pandas, importé el archivo CSV de las ardillas a una variable. Esta variable tendrá un objeto conocido como dataframe. Es muy similar a una lista. Con el condicional ["Primary Fur Color"] == "Color" se puede obtener todas las columnas que coincidas con el "color". Hice la comparación con los tres colores, y usando el método len contabilizé cuántas columnas había de cada color.
+Finalmente, para aprender cómo transformar esta información en un archivo CSV, utilicé los métodos DataFrame y to_csv.
+
 
 Now, the States Game project
 Basically, it is a game where you have to point out all the states in a map of the United States of America.
