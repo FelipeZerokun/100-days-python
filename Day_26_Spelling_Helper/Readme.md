@@ -7,7 +7,8 @@ In this project I will practising a bit dictionary and list comprehension.
 This is really useful for when we need to use specific parts of a list or a dictionary. For example, in the previous project we needed only the squirrels with specific fur color. With a condictional, que took only the columns that met that condition.
 
 Dictonary comprehension: new_dict = {new_key:new_value for item in list}
-List comprehension: new_list = new_item for item in list if test
+
+List comprehension: new_list = [new_item for item in list if test]
 
 Using read_csv from Pandas library, I imported a csv file with the nato alphabet as a DataFrame.Then I used dictionary comprehension to convert the data in this DataFrame to a list, where the keys will be the letters in the alphabet and the values will be the phonetic equivalent to each letter. 
 
