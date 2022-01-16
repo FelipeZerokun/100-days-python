@@ -1,5 +1,5 @@
 # 100 Days of Python
-## Project 26: Spelling helper project
+## Project 26: Spelling helper
 
 This project is a tool for spelling. The user enters a Name, and using the [nato phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet), the program will spell that name letter by letter.
 
@@ -22,7 +22,7 @@ If there were no errors in the execution of this code, the program will print th
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 100 Días de Python
-## Proyecto 26: Project de ayudante para deletreo.
+## Proyecto 26: Ayudante para deletreo.
 
 Este proyecto es una herramienta para deletrear. El usuario ingresa un nombre, y utilizando el [alfabeto radiofónico](https://es.wikipedia.org/wiki/Alfabeto_radiof%C3%B3nico), el programa deletreará ese nombre letra por letra.
 
