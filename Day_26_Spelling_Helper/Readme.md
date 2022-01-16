@@ -5,6 +5,7 @@ This project is a tool for spelling. The user enters a Name, and using the nato 
 
 In this project I will practising a bit dictionary and list comprehension. 
 This is really useful for when we need to use specific parts of a list or a dictionary. For example, in the previous project we needed only the squirrels with specific fur color. With a condictional, que took only the columns that met that condition.
+
 Dictonary comprehension: new_dict = {new_key:new_value for item in list}
 List comprehension: new_list = [new_item for item in list if test]
 
