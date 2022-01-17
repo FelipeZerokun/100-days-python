@@ -1,5 +1,5 @@
 # 100 Days of Python
-## Proyecto 27: TKinter Unit Converter
+## Project 27: TKinter Unit Converter
 
 TKinter is a python library for Graphical User Interface, or [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface). A Graphical user interface are graphical tools that the users can use to enter different kind of inputs. TKinter is a really good toolkit, and what most users are a accustomed to, since these tools are used by almost all programs and OS.
 Here are some example of TKinter tools:
@@ -22,7 +22,7 @@ Now, the project is a simple unit converter that will take a distance in miles, 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 100 Days of Python
-## Proyecto 27: TKinter Unit Converter
+## Proyecto 27: Conversor de unidades con TKinter
 
 TKinter es una librería de python para Interfaz gráfica de Usuario, o [GUI](https://es.wikipedia.org/wiki/Interfaz_gr%C3%A1fica_de_usuario). Una interfez gráfica de usuario son herramientas gráficas que los usuarios puede usar para ingresar distintos tipos de datos. TKinter es una gran herramienta, y a lo que la mayoría de los usuarios están acostumbrados, ya que estás herramientas son utilizadas por casi todos los programas y sistemas operativos.
 Aquí hay algunos ejemplos de herramientos de TKinter:
