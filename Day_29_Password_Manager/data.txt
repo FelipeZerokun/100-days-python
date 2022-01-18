@@ -1,1 +1,2 @@
-here are the passwords
+someplace  |  first_example@something.com  |  password123
+anotherplace  |  second_example@something.com  |  pass1111
