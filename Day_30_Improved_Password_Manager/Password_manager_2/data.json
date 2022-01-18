@@ -1,6 +1,6 @@
 {
-    "Hotmail": {
-        "email": "feliperojasl.python@hotmail.com",
-        "password": "artint2021FZR2303"
+    "email": {
+        "email": "your_email@example.com",
+        "password": "password123"
     }
 }
