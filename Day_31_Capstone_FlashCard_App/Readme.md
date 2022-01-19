@@ -23,7 +23,7 @@ I made this list a python object, and saved it as user_list. This way, I can kee
 # Second step
 Now, for the second step I will create the UI I will use for the app. I used Tkinter module for this. First, I set some variables I used in the GUI. I picked a random Kanji from the user_list, and using it as a key I looked for some definitions in the Kanji dictionary. Then, I created a window as a Tk object. Also, I loaded the images used in the project.
 
-After the window, I created the canvas for the words in japanese and english. Since the first thing the user will see is the japanese Kanji, I used the create_text method with the Kanji_word and the on'yomi and kun'yomi readings. The last things I needed for the UI are the buttons. I created two buttons, one for the "right" option and one for the "wrong" option. For now, these buttons won't have a command.
+After the window, I created the canvas for the words in japanese and english. Since the first thing the user will see is the japanese Kanji, I used the create_text method with the Kanji_word and the on'yomi and kun'yomi readings. The last things I needed for the UI are the buttons. I created two buttons, one for the "right" option and one for the "wrong" option. For now, these buttons won't have a command. Here an image showing how is the window so far.
 
 ![FlashCard example](./flashcard_example.png "Flashcard APP example")
 
