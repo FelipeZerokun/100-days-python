@@ -25,4 +25,6 @@ Now, for the second step I will create the UI I will use for the app. I used Tki
 
 After the window, I created the canvas for the words in japanese and english. Since the first thing the user will see is the japanese Kanji, I used the create_text method with the Kanji_word and the on'yomi and kun'yomi readings. The last things I needed for the UI are the buttons. I created two buttons, one for the "right" option and one for the "wrong" option. For now, these buttons won't have a command.
 
+![FlashCard example](/flashcard_example.png "Flashcard APP example")
+
 
