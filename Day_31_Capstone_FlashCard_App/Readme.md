@@ -14,5 +14,15 @@ This project is divided into four parts to make it more understandable.
 The first part was to make the UI. For this I used four images. One for the "correct" button, one for the "wrong" button, one for the front card and one for the back card.
 I will be using Tkinter module for the UI.
 
-Firstly I created a window using a Tk object. I made a main Canvas that will have the Japanese Kanji, with both on'yomi and kun'yomi readings. On'yomi is the chinese way to read a kanji, and kun'yomi is the japanese way to read a kanji. The main window will have a after method that will execute a function after 3000 miliseconds (or 3 seconds). This function will be flip_card, which will change the canvas a bit, showing the english meaning of the Kanji previously shown to the user.
+# First step
+The first thing I did was to import the database in a file called kanji_database.py. Here I took all the data inside the "kanji-kyouiku.json" file using the json library. This is imported as a dictionary object, and I save it in a variable called kanji_dataset.
+
+Then, using Try/Except I will try to open the kanjis_to_learn.csv file. If the file does not exist, in the Except part I will create a list with the Kanjis from the kanji_dataset.
+I made this list a python object, and saved it as user_list. This way, I can keep track of the kanjis that the user does not know.
+
+# Second step
+Now, for the second step I will create the UI I will use for the app. I used Tkinter module for this. First, I set some variables I used in the GUI. I picked a random Kanji from the user_list, and using it as a key I looked for some definitions in the Kanji dictionary. Then, I created a window as a Tk object. Also, I loaded the images used in the project.
+
+After the window, I created the canvas for the words in japanese and english. Since the first thing the user will see is the japanese Kanji, I used the create_text method with the Kanji_word and the on'yomi and kun'yomi readings. The last things I needed for the UI are the buttons. I created two buttons, one for the "right" option and one for the "wrong" option. For now, these buttons won't have a command.
+
 
