@@ -39,4 +39,5 @@ When the flashcard is flipped, the canvas will look like this
 The last thing I did was to create the functions for each button. The function for the wrong button is the easiest, because I just need to "flip" the flashcard back and add a new random Kanji. I defined a new function called new_word, which will do exactly that. Take a new random word from the user_list and change all the objects in the canvas back to japanese. Now, everytime the user click the "wrong" button, the flashcard will flip and show a new kanji.
 For the "right" button I define another function called known_word. This function will take the Kanji out of the user_list, and save the list in the csv file, so this kanji does not appear again for the user. After this, the function will call the new_word function to make a new kanji appear in the canvas. 
 
-I had to add a IF condition in the new_word function that checks the lenght in the user_list. If there are no items in the 
+I had to add a IF condition in the new_word function that checks the lenght in the user_list. If there are no items in the list, the window will close.
+If the user want to start again, just delete the kanjis_to_learn.csv file in the data folder.
