@@ -5,8 +5,8 @@ from random import randint
 import smtplib
 
 # print(file_path)
-MY_EMAIL = "feliperojasl.python@hotmail.com"
-MY_PASSWORD = "artint2021FZR2303"
+MY_EMAIL = "your_mail@hotmail.com"
+MY_PASSWORD = "password123"
 today_datetime = dt.datetime.now()
 day = today_datetime.day
 month = today_datetime.month
