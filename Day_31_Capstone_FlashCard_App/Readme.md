@@ -27,4 +27,10 @@ After the window, I created the canvas for the words in japanese and english. Si
 
 ![FlashCard example](./flashcard_example.png "Flashcard APP example")
 
+# Third step
+After the GUI, I needed a function that after three seconds "flips" the flashcard and shows the user the meaning of the Kanji in english.
+I defined a function called flip_card that will simple chance the objects in the canvas to their english version. In the case of the on'yomi and kun'yomi readins, I will use a blank space so nothing appears in the canvas. Also, I need to add a after method where I created the window object, so my function is executed 3000 ms after the code began.
+
+
+
 
