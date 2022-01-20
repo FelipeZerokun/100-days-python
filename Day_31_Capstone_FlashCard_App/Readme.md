@@ -29,11 +29,13 @@ After the window, I created the canvas for the words in japanese and english. Si
 
 # Third step
 After the GUI, I needed a function that after three seconds "flips" the flashcard and shows the user the meaning of the Kanji in english.
-I defined a function called flip_card that will simple chance the objects in the canvas to their english version. In the case of the on'yomi and kun'yomi readins, I will use a blank space so nothing appears in the canvas. Also, I need to add a after method where I created the window object, so my function is executed 3000 ms after the code began.
+I defined a function called flip_card that will simple change the objects in the canvas to their english version. In the case of the on'yomi and kun'yomi readins, I will use a blank space so nothing appears in the canvas. Also, I need to add a after method where I created the window object, so my function is executed 3000 ms after the code began.
 When the flashcard is flipped, the canvas will look like this
 
 ![FlashCard example](./flashcard_example2.png "Flashcard APP example")
 
+# Fourth step
 
-
+The last thing I did was to create the functions for each button. The function for the wrong button is the easiest, because I just need to "flip" the flashcard back and add a new random Kanji. I defined a new function called new_word, which will do exactly that. Take a new random word from the user_list and change all the objects in the canvas back to japanese. Now, everytime the user click the "wrong" button, the flashcard will flip and show a new kanji.
+For the "right" button I define another function called known_word.
 
