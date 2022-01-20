@@ -41,7 +41,7 @@ if WEEKDAYS[weekday] == "Monday":
 
     with smtplib.SMTP("smtp.office365.com", port= 587) as connection:
         connection.starttls()
-        connection.login(user="feliperojasl.python@hotmail.com", password="artint2021FZR2303")
-        connection.sendmail(from_addr="feliperojasl.python@hotmail.com", to_addrs="epilefrojasleon@hotmail.com",
+        connection.login(user="your_mail@hotmail.com", password="password123")
+        connection.sendmail(from_addr="your_mail@hotmail.com", to_addrs="another_mail@hotmail.com",
                             msg=f"Subject:Motivation\n\nEs lunes para motivarse! \n{message}. \nNo te rindas jamás!")
 
