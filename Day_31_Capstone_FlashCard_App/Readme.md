@@ -40,4 +40,4 @@ The last thing I did was to create the functions for each button. The function f
 For the "right" button I define another function called known_word. This function will take the Kanji out of the user_list, and save the list in the csv file, so this kanji does not appear again for the user. After this, the function will call the new_word function to make a new kanji appear in the canvas. 
 
 I had to add a IF condition in the new_word function that checks the lenght in the user_list. If there are no items in the list, the window will close.
-If the user want to start again, just <ins>delete the kanjis_to_learn.csv<\ins> file in the data folder.
+If the user want to start again, just <ins>delete the kanjis_to_learn.csv</ins> file in the data folder.
