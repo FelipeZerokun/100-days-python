@@ -25,7 +25,7 @@ After the window, I created the canvas for the words in japanese and english. Si
 
 # Third step
 After the GUI, I needed a function that after three seconds "flips" the flashcard and shows the user the meaning of the Kanji in english.
-I defined a function called flip_card that will simple change the objects in the canvas to their english version. In the case of the on'yomi and kun'yomi readins, I will use a blank space so nothing appears in the canvas. Also, I need to add a after method where I created the window object, so my function is executed 3000 ms after the code began.
+I defined a function called flip_card that will simple change the objects in the canvas to their english version. In the case of the on'yomi and kun'yomi readins, I will use a blank space so nothing appears in the canvas. Also, I needed to add a after method where I created the window object, so my function is executed 3000 ms after the code began.
 When the flashcard is flipped, the canvas will look like this
 
 ![FlashCard example](./flashcard_example2.png "Flashcard APP example")
@@ -35,7 +35,7 @@ When the flashcard is flipped, the canvas will look like this
 The last thing I did was to create the functions for each button. The function for the wrong button is the easiest, because I just need to "flip" the flashcard back and add a new random Kanji. I defined a new function called new_word, which will do exactly that. Take a new random word from the user_list and change all the objects in the canvas back to japanese. Now, everytime the user click the "wrong" button, the flashcard will flip and show a new kanji.
 For the "right" button I define another function called known_word. This function will take the Kanji out of the user_list, and save the list in the csv file, so this kanji does not appear again for the user. After this, the function will call the new_word function to make a new kanji appear in the canvas. 
 
-I had to add a IF condition in the new_word function that checks the lenght in the user_list. If there are no items in the list, the window will close.
+I had to add a IF condition in the known_word function that checks the lenght in the user_list. If there are no items in the list, the window will close.
 If the user want to start again, just <ins>delete the kanjis_to_learn.csv file</ins> in the data folder.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -61,13 +61,13 @@ Luego, usando Try/Except intenté abrir el archivo kanjis_to_learn.csv. Si el ar
 # Segundo paso
 Para el segundo paso lo que hice fue crear la GUI que usaré para la app. Utilicé el módulo Tkinter para esto. Primero, establecí algunos parámetros que usé para la GUI. Escogí un Kanji aleatorio de la lista user_list, y lo usé como llave para buscar algunas definiciones en el diccionario con Kanjis. Luego, creé una ventana cómo objeto Tk. También cargué algunas imágenes que usaré en el proyecto.
 
-Después de la ventana, creé un Canvas para las palabras tanto en japonés como en inglés. Ya que lo primero que verá el usuario es el Kanji japonés, usé el método create_text con el kanji en kanji_word y las lecturas on'yomi y kun'yomi. Lo último que necesitaba para la GUI eran los botones. Creé dos botones, uno para la opción "correcta" y uno para la opción "equivocada". Por ahora, estos botones no tienen un comando. Aquí está una imagen mostrando como queda la ventana hasta ahora.
+Después de la ventana, creé un Canvas para las palabras tanto en japonés como en inglés. Ya que lo primero que verá el usuario es el Kanji japonés, usé el método create_text con el kanji en kanji_word y las pronunciaciones on'yomi y kun'yomi. Lo último que necesitaba para la GUI eran los botones. Creé dos botones, uno para la opción "correcta" y uno para la opción "equivocada". Por ahora, estos botones no tienen un comando. Aquí está una imagen mostrando como queda la ventana hasta ahora.
 
 ![FlashCard example](./flashcard_example.png "Ejemplo de la tarjeta dinámica")
 
 # Tercer paso
 Después del GUI, necesitaba una función que después de tres segundos "girara" la tarjeta para mostrarle al usuario el significado del Kanji en inglés.
-Definí una función llamada flip_card que cambia los objetos en el canvas por su versión en inglés. En el caso de las pronunciaciones on'yomi y kun'yomi, usé espacios en blanco para que no aparezca nada en el canvas. También tuve que añadir un método dónde creé el objeto para la ventaja, de forma que mi función se ejecute 3000 ms después de que inicie el código.
+Definí una función llamada flip_card que cambia los objetos en el canvas por su versión en inglés. En el caso de las pronunciaciones on'yomi y kun'yomi, usé espacios en blanco para que no aparezca nada en el canvas. También tuve que añadir un método after dónde creé el objeto para la ventaja, de forma que mi función se ejecute 3000 ms después de que inicie el código.
 Cuándo la tarjeta se gire, el canvas se verá así
 
 ![FlashCard example](./flashcard_example2.png "Ejemplo de la tarjeta dinámica")
