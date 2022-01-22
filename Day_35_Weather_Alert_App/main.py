@@ -10,20 +10,20 @@ proxy_client.session.proxies = {'https': os.environ['https_proxy']}
 # using a free subscription to ONE call API https://openweathermap.org/api/one-call-api
 # My twilio recovery code: Td6JqqtCAsEzXClvVoBx7dNT1iEX_yx3wALjRlJ2
 
-API_KEY = 'd7de006bb161c943ebbea55409fb01d3'
+API_KEY = 'YOUR_API_KEY'
 ENDPOINT = 'https://api.openweathermap.org/data/2.5/onecall'
 
 weather_params = {
     "lat": -0.096190,
     "lon": -78.470730,
-    "appid": 'd7de006bb161c943ebbea55409fb01d3',
+    "appid": 'API_ID',
     "exclude": 'current,minutely,daily',
     "units": 'metric'
 }
 
-twilio_account_sid = 'AC3b89cc2650bfd0cfa8dc8c61c956dfe5'
-twilio_auth_token = 'f8e44afccb63027df521116a99852635'
-my_twilio_num = '+13345649974'
+twilio_account_sid = 'USER_ID'
+twilio_auth_token = 'SECRET_TOKEN'
+my_twilio_num = 'TWILIO_NUM'
 
 response = requests.get(ENDPOINT, params=weather_params)
 hourly_data = response.json()["hourly"]
@@ -43,6 +43,6 @@ if will_rain:
         .create(
         body="It is going to rain today!",
         from_=my_twilio_num,
-        to='+593997879292'
+        to='YOUR_NUMBER'
     )
     print(message.status)
