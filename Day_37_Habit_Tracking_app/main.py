@@ -3,8 +3,8 @@ import os
 from datetime import datetime
 
 # Following the steps in https://pixe.la/
-USERNAME = 'feliperojaspython3'
-TOKEN = 'GHUGRjbujGJHhyuGUHBfd'
+USERNAME = 'YOUR_USERNAME'
+TOKEN = 'YOUR_TOKEN'
 GRAPH_ID = 'graph1'
 
 # First step. Create user name
