@@ -81,8 +81,8 @@ if diff_percentage > 5:
         message = client.messages \
             .create(
                 body=f"{STOCK}: {stock_status}{stock_price_difference}% \n{article}. ",
-                from_='+13345649974',
-                to='+593 99 787 9292'
+                from_='TWILLIO_NUM',
+                to='YOUR_NUM'
         )
 
     #Optional: Format the SMS message like this:
