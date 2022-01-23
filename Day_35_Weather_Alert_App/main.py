@@ -7,8 +7,7 @@ proxy_client = TwilioHttpClient()
 proxy_client.session.proxies = {'https': os.environ['https_proxy']}
 
 # API endpoint from https://openweathermap.org
-# using a free subscription to ONE call API https://openweathermap.org/api/one-call-api
-# My twilio recovery code: Td6JqqtCAsEzXClvVoBx7dNT1iEX_yx3wALjRlJ2
+
 
 API_KEY = 'YOUR_API_KEY'
 ENDPOINT = 'https://api.openweathermap.org/data/2.5/onecall'
