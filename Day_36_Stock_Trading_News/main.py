@@ -81,7 +81,7 @@ if diff_percentage > 5:
         message = client.messages \
             .create(
                 body=f"{STOCK}: {stock_status}{stock_price_difference}% \n{article}. ",
-                from_='TWILLIO_NUM',
+                from_='TWILIO_NUM',
                 to='YOUR_NUM'
         )
 
