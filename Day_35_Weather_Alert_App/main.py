@@ -1,12 +1,7 @@
 import os
 import requests
 from twilio.rest import Client
-'''
-from twilio.http.http_client import TwilioHttpClient
 
-proxy_client = TwilioHttpClient()
-proxy_client.session.proxies = {'https': os.environ['https_proxy']}
-'''
 
 # API endpoint from https://openweathermap.org
 # using a free subscription to ONE call API https://openweathermap.org/api/one-call-api
