@@ -2,10 +2,8 @@ import os
 import requests
 from twilio.rest import Client
 
-
 # API endpoint from https://openweathermap.org
 # using a free subscription to ONE call API https://openweathermap.org/api/one-call-api
-# My twilio recovery code: Td6JqqtCAsEzXClvVoBx7dNT1iEX_yx3wALjRlJ2
 
 # First, I did the connection to OpenWeatherMaps.org
 API_KEY = os.environ['WEATHER_API_KEY']
