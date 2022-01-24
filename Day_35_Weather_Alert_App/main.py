@@ -11,8 +11,8 @@ ENDPOINT = 'https://api.openweathermap.org/data/2.5/onecall'
 
 # Again, I used the website latlong.net to get my coords
 weather_params = {
-    "lat": -0.096190,
-    "lon": -78.470730,
+    "lat": -0.180653,
+    "lon": -78.467834,
     "appid": API_KEY,
     "exclude": 'current,minutely,daily',
     "units": 'metric'
