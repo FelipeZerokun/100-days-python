@@ -18,6 +18,7 @@ The parameters for the graph are:
 * color: The color of the squares. Here are used some japanese names for the colors.
 
 Also, you need a Headers dictionary with your username Token, so the graph is created in YOUR Pixela's profile page. After running the code, you should see the response message with Sucess text. Now, you can browse https://pixe.la/v1/users/a-know/graphs/test-graph to see your graph and look for it in youPixela's profile, like this:
+
 ![Graph example](./running_graph.png "Running Graph")
 
 
