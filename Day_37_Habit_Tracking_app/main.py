@@ -3,9 +3,10 @@ import os
 from datetime import datetime
 
 # Following the steps in https://pixe.la/
-USERNAME = 'YOUR_USERNAME'
-TOKEN = 'YOUR_TOKEN'
+USERNAME = os.environ['PIXELA_USERNAME']
+TOKEN = os.environ['PIXELA_TOKEN']
 GRAPH_ID = 'graph1'
+
 
 # First step. Create user name
 pixela_endpoint = 'https://pixe.la/v1/users'      # This one is to Create a user
@@ -15,15 +16,17 @@ create_user_params = {
     'agreeTermsOfService': 'yes',
     'notMinor': 'yes'
 }
+
 # response = requests.post(url= pixela_endpoint, json=create_user_params)
 # print(response.text)
-# I comment out because my user is already created
+# I comment it out because my user is already created
 
 # Second step. Create a Graph definition
+
 graph_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs'
 graph_config = {
     'id': GRAPH_ID,
-    'name': 'cycling_graph',
+    'name': 'running_graph',
     'unit': 'Km',
     'type': 'float',
     'color': 'momiji'
@@ -37,19 +40,19 @@ headers = {
 # print(response.text)
 # Commented out after created the graph
 
-# Third step. Get the graph!
+# Third step. Send data for the graph!
 pixel_creation_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}'
 
 today = datetime.now()
 today = today.strftime("%Y%m%d")
-print(today)
+# print(today)
 pixel_config = {
     'date': today,
     'quantity': input("How many KM did you run today?: "),
 }
 
-# response = requests.post(url=pixel_creation_endpoint, json=pixel_config, headers=headers)
-#print(response.text)
+response = requests.post(url=pixel_creation_endpoint, json=pixel_config, headers=headers)
+print(response.text)
 
 
 # ##### Update a graph configuration
