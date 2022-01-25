@@ -16,4 +16,7 @@ The parameters for the graph are:
 * unit: A text indicating the units. For this case units will be Km.
 * type: The type of data in the graph
 * color: The color of the squares.
-* 
+*
+Also, you need a Headers dictionary with your username Token, so the graph is created in YOUR Pixela's profile page. After running the code, you should see the response message with Sucess text.
+
+
