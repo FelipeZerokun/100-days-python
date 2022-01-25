@@ -3,9 +3,9 @@ import os
 from datetime import datetime
 
 # Following the steps in https://pixe.la/
-USERNAME = os.environ['PIXELA_USERNAME']
-TOKEN = os.environ['PIXELA_TOKEN']
-GRAPH_ID = 'graph1'
+USERNAME = YOUR_USERNAME
+TOKEN = YOUR_SECRET_TOKEN
+GRAPH_ID = NAME_FOR_YOUR_GRAPH
 
 
 # First step. Create user name
