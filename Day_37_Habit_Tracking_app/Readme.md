@@ -17,7 +17,7 @@ The parameters for the graph are:
 * type: The type of data in the graph
 * color: The color of the squares.
 *
-Also, you need a Headers dictionary with your username Token, so the graph is created in YOUR Pixela's profile page. After running the code, you should see the response message with Sucess text. Now, you can see the graph in your Pixela's profile, like this:
+Also, you need a Headers dictionary with your username Token, so the graph is created in YOUR Pixela's profile page. After running the code, you should see the response message with Sucess text. Now, you can browse https://pixe.la/v1/users/a-know/graphs/test-graph to see your graph and look for it in youPixela's profile, like this:
 ![Graph example](./running_graph.png "Running Graph")
 
 
