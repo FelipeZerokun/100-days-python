@@ -5,3 +5,4 @@ Here I made a small habit tracker that shows how many days in a row the user has
 ![Pixela example](./pixela_image.png "Habit Tracking example")
 For this I will be using the [Pixela](https://pixe.la/) website. Pixela has a Github you can check and support here: [Pixela's Github](https://github.com/a-know/Pixela)
 
+Here I used other methods from HTTP requests. With these methods I can send, update and delete data from another program or website.
