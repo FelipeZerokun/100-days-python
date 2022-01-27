@@ -20,3 +20,4 @@ Providing the user's information, the request will return a json file with all t
 
 Then, I just needed to send this data to my spreadsheet. In sheety I created a new project called my_workouts. I enabled the Token security option, so the API asks for authorization every time I send or request data. For every exercise detected by the natural language processing app from Nutritionix I saved them in my sheet. It will look like this:
 
+![Workout example](./spreadsheet_example.png "Workout Tracking example")
