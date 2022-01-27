@@ -16,4 +16,7 @@ The first step was to setup the Nutritionix connection. I created an account, an
 
 I used the Natural Language endpoint to get the data I needed. [Here](https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#) is the documentation for it, in the Exercise Endpoints section.
 Also [here](https://gist.github.com/mattsilv/d99cd145cc2d44d71fa5d15dd4829e03) is an Example of how to use this enpoint. 
-Providing the user's information, the request will return a json file with all the data I need. I stored each data I needed in different variables.
+Providing the user's information, the request will return a json file with all the data I need. I stored each data I needed in different variables. I used a FOR loop to go through each activity the user entered. To see if everything was going well, I printed a message for each activity done.
+
+Then, I just needed to send this data to my spreadsheet. In sheety I created a new project called my_workouts. I enabled the Token security option, so the API asks for authorization every time I send or request data. For every exercise detected by the natural language processing app from Nutritionix I saved them in my sheet. It will look like this:
+
