@@ -39,11 +39,9 @@ for city in flights_data:
         print(f"Low price found for {flight.destination_city}!")
         sheety_manager.update_sheety_data(flight, city["iataCode"], city["id"])
 
-        '''
         notification_manager.send_sms(
             message=f"Low price alert! Only ${flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
         )
-        '''
 
 
 
