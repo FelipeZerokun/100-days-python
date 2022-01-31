@@ -17,3 +17,17 @@ class DataManager:
         data = response.json()
         self.flights_data = data['prices']
         return self.flights_data
+
+    def update_sheety_data(self, flight_obj, city_code, city_id):
+        new_data = {
+            "price": {
+                "iataCode": city_code,
+                "lowestPrice": flight_obj.price
+            }
+        }
+        response = requests.put(url=f"{self.sheety_endpoint}/{city_id}",
+                                headers=self.sheety_header,
+                                json=new_data
+        )
+        print(response.text)
+

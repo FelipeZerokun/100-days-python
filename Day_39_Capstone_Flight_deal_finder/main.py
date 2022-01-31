@@ -7,7 +7,7 @@ from notification_manager import NotificationManager
 
 sheety_manager = DataManager()
 flights_data = sheety_manager.get_sheety_data()
-# print(flights_data)
+print(flights_data)
 flight_search = FlightSearch()
 notification_manager = NotificationManager()
 
@@ -23,6 +23,7 @@ for city in flights_data:
         print(f"No IATA code for the city {city['city']}")
         city["iataCode"] = flight_search.get_iata_codes(city['city'])
 
+
     # print(flights_data)
     # Then, I used each IATA code to check the flight information
     flight = flight_search.get_flights_data(
@@ -31,10 +32,18 @@ for city in flights_data:
         tomorrow.strftime("%d/%m/%Y"),
         in_six_months.strftime("%d/%m/%Y")
     )
-    if flight.price < city["lowestPrice"]:
+    if flight == None:
+        pass
+
+    elif flight.price < city["lowestPrice"]:
+        print(f"Low price found for {flight.destination_city}!")
+        sheety_manager.update_sheety_data(flight, city["iataCode"], city["id"])
+
+        '''
         notification_manager.send_sms(
-            message=f"Low price alert! Only £{flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
+            message=f"Low price alert! Only ${flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
         )
+        '''
 
 
 
