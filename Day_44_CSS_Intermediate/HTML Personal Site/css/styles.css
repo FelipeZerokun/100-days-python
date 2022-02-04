@@ -1,0 +1,137 @@
+body {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+
+  font-size: 1rem;
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #A2DBFA;
+  border-width: 5px;
+  width: 5%;
+}
+
+h1 {
+  margin: 0 auto 0 auto;
+  line-height: 3;
+  font-size: 6rem;
+  color: #1687A7;
+  font-weight: bold;
+}
+
+h2 {
+  color: #276678;
+  line-height: 3;
+}
+
+h3 {
+  color: #1687A7;
+  line-height: 3;
+}
+
+.languages-container{
+  height: 25px;
+  width: 250px;
+  background-color: #D3E0EA;;
+  position: absolute;
+  right: 25px;
+}
+
+.top-container {
+  background-color: #D3E0EA;
+  height: 40rem;
+}
+
+.middle-container {
+  margin: 50px 0;
+}
+
+.bottom-container {
+  background-color: #1687A7;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+
+}
+
+.my_description{
+  margin: 50px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  text-align: left
+}
+
+.works-link {
+  margin: 10px auto;
+}
+
+.my-picture {
+  width: 17%;
+  margin-top: 50px;
+
+}
+
+.robot-icon {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.ai-icon {
+  width: 25%;
+  float: right;
+}
+
+.my-career {
+  width: 70%;
+  margin: 100px 0 100px auto;
+  position: relative;
+  bottom: 100px;
+
+}
+
+.my-vocation {
+  width: 72%;
+  margin: 100px auto 100px 0;
+  position: relative;
+  bottom: 100px;
+}
+
+.education-title {
+  background-color: #D3E0EA;
+  height: 20rem;
+}
+
+.work-title {
+  background-color: #D3E0EA;
+  height: 20rem;
+}
+
+.education-list {
+  text-align: left;
+  width: 45%;
+  margin: 20px auto;
+}
+
+.course-list {
+  text-align: left;
+  width: 45%;
+  margin: 20px auto 100px auto;
+}
+
+.projects-list {
+  text-align: left;
+  width: 45%;
+  margin: 20px auto 100px auto;
+}
+
+.work-table {
+  text-align: left;
+  width: 45%;
+  margin: 20px auto 100px auto;
+}
