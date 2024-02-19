@@ -1,7 +1,8 @@
 # 100 days of coding - Python
 # Day 7: Hangman
-
 # By Felipe Rojas
+# Learning how to use multiple files in python by importing them into the main file.
+
 
 import random
 import hangman_art as art
