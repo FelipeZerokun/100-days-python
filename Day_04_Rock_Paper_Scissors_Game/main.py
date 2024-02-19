@@ -1,3 +1,9 @@
+# 100 days of coding - Python
+# Day 4: Rock Paper Scissors game
+# By Felipe Rojas
+# Learning how to nest IF statements
+# Learning how to use the random module
+  
 import random
 
 rock = '''

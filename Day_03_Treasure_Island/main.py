@@ -1,3 +1,10 @@
+# 100 days of coding - Python
+# Day 2: Tip Calculator
+# By Felipe Rojas
+# Using print with ASCII art
+# Using IF-ELSE statements for decision making.
+
+
 print('''
 *******************************************************************************
           |                   |                  |                     |

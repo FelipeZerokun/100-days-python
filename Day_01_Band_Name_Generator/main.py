@@ -1,7 +1,7 @@
-# Day one project. Band name generator.
-# Understanding Python variables and input function.
-# input will get data from the user in the form of a string.
-# Strings can be added together to get a new string variable.
+# 100 days of coding - Python
+# Day 1: Band name generator
+# By Felipe Rojas
+# Learning how to use string variables and the input function.
 
 print("Band name Generator, by Felipe Rojas")
 # Ask the user for the city that they grew up in.

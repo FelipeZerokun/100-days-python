@@ -1,3 +1,9 @@
+# 100 days of coding - Python
+# Day 9: Secret Auction
+# By Felipe Rojas
+# Learning how to define and use functions with fixed arguments.
+
+
 import art
 import os
 clear = lambda: os.system('cls')
