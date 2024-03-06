@@ -13,8 +13,6 @@ clear = lambda: os.system('cls')
 print(art.logo)
 print("Secret Auction program, by Felipe Rojas")
 
-print(art.logo)
-print("Secret Auction program, by Felipe Rojas")
 
 bidders = []
 auction_end = False

@@ -2,7 +2,7 @@
 ## Project 3: Find the treasure Game
 
 This is a small game project where the user must pick between some options and try to get to the treasure.
-Here I explored the uses of IF, ELIF and ELSE statements for flow control. Quite a simple project where I could add endless path for the user to take.
+Here I explored the uses of IF, ELIF and ELSE statements for flow control. Quite a simple project where I could add endless paths for the user to take.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 

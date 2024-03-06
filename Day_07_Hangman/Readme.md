@@ -1,4 +1,4 @@
-# 100 Days of Python
+where# 100 Days of Python
 ## Project 7: Hangman game
 
 Another classic game in Python!
@@ -15,7 +15,7 @@ The user will have 6 lives, and everytime the user fails to guess a letter in th
 
 The game continues until the user guesses the word, or there are no more lives.
 
-This project is another excelent practice for programming logic, and to begin to understand how to get certain objects from external files.
+This project is another excellent practice for programming logic, and to begin to understand how to get certain objects from external files.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

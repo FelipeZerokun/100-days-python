@@ -2,7 +2,7 @@
 # Day 2: Tip Calculator
 # By Felipe Rojas
 # Using print with ASCII art
-# Using IF-ELSE statements for decision making.
+# Using IF-ELSE statements for decision-making.
 
 
 print('''

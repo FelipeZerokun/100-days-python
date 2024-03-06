@@ -2,6 +2,7 @@
 # Day 7: Hangman
 # By Felipe Rojas
 # Learning how to use multiple files in python by importing them into the main file.
+# Using While loops to keep the code running
 
 
 import random
