@@ -2,6 +2,9 @@
 # Day 9: Secret Auction
 # By Felipe Rojas
 # Learning how to define and use functions with fixed arguments.
+# Learning the difference between list and dictionaries.
+# How to define and use dictionaries.
+# How to add and access data in lists and dictionaries.
 
 
 import art

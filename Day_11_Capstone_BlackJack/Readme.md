@@ -5,7 +5,7 @@ The first Capstone project in the course.
 Another really popular game, the Blackjack Game!
 
 This project uses all the knowledge from the projects before.
-* import data from other files
+* import data and functions from other files
 * User inputs
 * Type conversion
 * Function creation and calling
@@ -25,10 +25,10 @@ There is a small trick here. The Ace can be used either as a 11 or 1. So, there 
 
 
 El primer proyecto grande del curso.
-!Otro juego muy popular, veintiuno o BlackJack!
+¡Otro juego muy popular, veintiuno o BlackJack!
 
 Este proyecto utiliza todo el conocimiento adquirido de proyectos anteriores.
-* importar data de otros archivos.
+* importar data y funciones de otros archivos.
 * Ingreso de información de usuario.
 * Conversión de tipo
 * Creación y llamado de funciones.

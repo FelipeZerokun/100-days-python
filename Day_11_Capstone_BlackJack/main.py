@@ -1,4 +1,7 @@
 # Day 11 of 100: BlackJack Capstone proyect by Felipe Rojas
+# First capstone project, BlackJack game
+# Using everything learned so far, I will create a simple BlackJack game
+# The card selection functions is set in a different file, card_selection.py
 
 from card_selection import random_card_selection
 
@@ -6,9 +9,6 @@ print("Welcome to the BlackJack Game, by Felipe Rojas")
 
 
 def blackjack_game():
-    
-    player_A = False
-    dealer_A = False
     # First, I will set the Player and Dealer's cards
     player_hand = []
     dealer_hand = []
@@ -48,7 +48,7 @@ def blackjack_game():
         else:
             print("Not a valid input")
     
-    if player_lose == True:
+    if player_lose:
         print("You lose")
         
     else:
