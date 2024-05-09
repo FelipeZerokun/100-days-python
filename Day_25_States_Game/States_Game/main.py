@@ -1,6 +1,7 @@
 import turtle
 
-import pandas
+import pandas as pd
+from name_on_state import NameTheState
 
 game_screen = turtle.Screen()
 game_screen.setup(width=780, height=520)
@@ -15,16 +16,19 @@ turtle.shape(background)
 #     print(x, y)
 # turtle.onscreenclick(get_mouse_click_coor)
 
-import pandas as pd
-from name_on_state import NameTheState
 
 game_on = True
 name_state = NameTheState()
 states_check_list = []
 
 while game_on:
-    user_answer = game_screen.textinput(title=f"Guess the State {len(states_check_list)}/50", prompt="Enter a State Name").title()
-    print(user_answer)
+    try:
+        user_answer = game_screen.textinput(title=f"Guess the State {len(states_check_list)}/50", prompt="Enter a State Name").title()
+        print(user_answer)
+    except AttributeError:
+        game_on = False
+        break
+
 
     states_file = pd.read_csv("50_states.csv")
     for state in states_file["state"]:
@@ -33,8 +37,7 @@ while game_on:
             print("Got one!")
             states_check_list.append(user_answer)
             correct_state = states_file[states_file["state"] == state]
-            name_state.write_state_name(user_answer, float(correct_state["x"]), float(correct_state["y"]))
-            print(correct_state["state"])
+            name_state.write_state_name(user_answer, float(correct_state["x"].iloc[0]), float(correct_state["y"].iloc[0]))
             # print(state_pos)
 
         if len(states_check_list) >= 50:
@@ -52,7 +55,7 @@ while game_on:
             # Using List Comprehension from next day lesson
             missing_states = [states for states in states_file["state"] if states not in states_check_list]
 
-            new_data = pandas.DataFrame(missing_states)
+            new_data = pd.DataFrame(missing_states)
             new_data.to_csv("states_to_learn.csv")
 
 
