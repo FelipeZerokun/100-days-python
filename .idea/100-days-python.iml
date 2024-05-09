@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Day_01_Band_Name_Generator/env" />
       <excludeFolder url="file://$MODULE_DIR$/Day_02_Tip_Calculator/env" />
     </content>
-    <orderEntry type="jdk" jdkName="python-100-days" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="100-days-python" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
