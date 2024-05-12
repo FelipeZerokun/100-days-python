@@ -1,3 +1,15 @@
+# 100 days of coding - Python
+# Day 14: High-lower instagram followers game
+# By Felipe Rojas
+
+# Creating a game where the user has to guess who has more followers on Instagram
+# The user will be presented with two options and will have to guess who has more followers
+# If the user gets it right, they will continue playing, if they get it wrong, the game will end
+# The data for the game will be stored in a separate file called game_data.py
+# The data will be a list of dictionaries with the following keys:
+# name, follower_count, description, country
+# The score is stored in a global variable and will be displayed at the end of the game
+
 from art import logo, vs
 import random
 from game_data import data
@@ -87,3 +99,4 @@ def game_loop():
             print(f"Your final score is {WIN_STREAK}")
         
 game_loop()
+
